@@ -24,7 +24,7 @@ Under no circumstances provide a download link to any of the files.
 export default async function callGPT(content: string) {
   const completion = await openai.chat.completions.create({
     messages: [{ role: "system", content: prompt }, { role: "user", content: content }],
-    model: "gpt-3.5-turbo",
+    model: "gpt-4",
   });
 
   console.log(completion.choices[0]);
