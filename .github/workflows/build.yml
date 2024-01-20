@@ -10,10 +10,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -21,14 +17,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "18"
+      - name: 'Create env file'
+        run: |
+            echo "${{ secrets.ENV_FILE }}" > .env
       - name: Install Dependencies
         run: npm install
       - name: Install ts-node
         run: npm install -g ts-node typescript '@types/node'
       - name: Rebuild README.md File
-        env:
-            GH_TOKEN: ${{ secrets.GH_TOKEN }}
-            OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |-
             ts-node src/app.ts "$GH_TOKEN" "$OPENAI_API_KEY"
       - name: Commit and Push if Changed
