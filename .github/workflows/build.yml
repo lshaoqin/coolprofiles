@@ -20,6 +20,14 @@ jobs:
         run: npm install
       - name: Install ts-node
         run: npm install -g ts-node typescript '@types/node'
+      - name: Use variables
+        run: |
+          GH_TOKEN=${{ env.GH_TOKEN }}
+          OPENAI_API_KEY=${{ env.OPENAI_API_KEY }}
+        env:
+            GH_TOKEN: ${{ env.GH_TOKEN }}
+            OPENAI_API_KEY: ${{ env.OPENAI_API_KEY }}
+
       - name: Rebuild README.md File
         run: ts-node src/app.ts
       - name: Commit and Push if Changed
