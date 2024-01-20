@@ -27,8 +27,8 @@ jobs:
         run: npm install -g ts-node typescript '@types/node'
       - name: Rebuild README.md File
         run: |-
-            GH_TOKEN=${{ secrets.GH_TOKEN }}
-            OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
+            GH_TOKEN=${{ env.GH_TOKEN }}
+            OPENAI_API_KEY=${{ env.OPENAI_API_KEY }}
             ts-node src/app.ts
       - name: Commit and Push if Changed
         run: |-
