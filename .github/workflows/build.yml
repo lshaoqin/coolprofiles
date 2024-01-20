@@ -18,6 +18,8 @@ jobs:
           node-version: "18"
       - name: Install Dependencies
         run: npm install
+      - name: Install ts-node
+        run: npm install -g ts-node typescript '@types/node'
       - name: Rebuild README.md File
         run: ts-node src/app.ts
       - name: Commit and Push if Changed
