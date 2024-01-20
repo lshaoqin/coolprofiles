@@ -30,7 +30,7 @@ jobs:
             GH_TOKEN: ${{ secrets.GH_TOKEN }}
             OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |-
-            ts-node src/app.ts
+            ts-node src/app.ts "$GH_TOKEN" "$OPENAI_API_KEY"
       - name: Commit and Push if Changed
         run: |-
           git add .
