@@ -1,5 +1,7 @@
 import OpenAI from "openai"
 
+require('dotenv').config()
+
 const openai = new OpenAI();
 
 async function main() {
