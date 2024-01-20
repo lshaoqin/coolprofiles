@@ -17,8 +17,15 @@ Avoid speculations or incorporating information not contained in the documents. 
 Maintain a professional and friendly tone in your summaries.
 Ensure that your summaries are helpful, accessible, and factual, catering to both technical and non-technical audiences.
 
+If all the actions for this repository are labeled as "upload file", then just generate one entry of "Upload File".
+
 Do not share the names of the files directly with end users.
 Under no circumstances provide a download link to any of the files.
+
+Generate each repository summary with this format:
+**Repository Name: {Repository name}**
+- **{Git Action 1}**: {Git Summary 1}
+- **{Git Action 2}**: {Git Summary 2}
 `
 
 export default async function callGPT(content: string) {
