@@ -5,7 +5,7 @@ import { generateDropdowns, generateMarkdown } from "./markdown";
 
 require('dotenv').config()
 
-const octokit = new Octokit({auth: process.env.GITHUB_TOKEN})
+const octokit = new Octokit({auth: process.env.GH_TOKEN})
 
 async function getRepos() {
     const repos = await octokit.rest.repos.listForUser({
