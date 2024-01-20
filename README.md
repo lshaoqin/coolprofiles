@@ -3,8 +3,9 @@
 
 <details>
 <summary>MekongGPT</summary>
-Repository Name: MekongGPT
 
+**Repository Name: MekongGPT**
+---
 Git Actions:
 - **Add intermediate and error messages**: Improved user experience by adding more feedback during use.
 - **Update project to use Pinecone**: Changed the project to use the Pinecone database system.
@@ -35,8 +36,9 @@ Git Actions:
 
 <details>
 <summary>pe</summary>
-**pe Repository**
 
+**Repository Name: pe**
+ ---
 In this repository, numerous actions have taken place, but, unfortunately, they are all labeled as 'upload file' which doesn't provide specific details on the tasks performed. 
 
 For future reference and to benefit other collaborators or people looking at this repository, it would be best to provide more detailed commit messages. This could include a brief idea of the changes made or the reason for uploading the file. This will make it easier to keep track of the project's progress and understand the history of changes.
@@ -51,8 +53,9 @@ Documenting tasks in this way can significantly improve the workflow and is a be
 
 <details>
 <summary>tp</summary>
-**Repository name: tp**
-
+ 
+**Repository Name: tp**
+---
 - **Merge pull request #32 from lshaoqin/feature/courses/#22**: This action is about updating the test cases for mods.
  
 - **Merge pull request #31 from PohSayKeong/feature/availability/#18**: In this action, the availability of the Teaching Assistants (TAs) was updated.
@@ -92,15 +95,17 @@ Documenting tasks in this way can significantly improve the workflow and is a be
 
 <details>
 <summary>ped</summary>
-Repository Name: ped
 
+**Repository Name: ped**
+---
 Unfortunately, all the actions for this repository are labeled as "upload file" without any specific details. Without more information about what changes, additions, or deletions were made in these uploads, it's challenging to provide insight about them. The next time, please ensure all commits have clear and descriptive messages to better track developments and changes in the repository.
 </details>
 
 <details>
 <summary>spaceship-titanic</summary>
-**spaceship-titanic**
 
+**Repository Name: spaceship-titanic**
+---
 - **Initial commit:** This is the first commit to the repository, where the base files and structure of the project were created.
 - **Created using Colaboratory:** The repository was created using Google Colaboratory, a tool that lets you write and execute Python in your browser.
 - **Update README.md:** The README file was updated. This file typically includes information about the project such as the description, setup instructions, or usage examples. (mentioned three times)
