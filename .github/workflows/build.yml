@@ -31,5 +31,7 @@ jobs:
         run: |-
           git add .
           git diff
+          git config --global user.email "shaoqin.lu@gmail.com"
+          git config --global user.name "Shaoqin"
           git commit -m "docs: auto-update README.md" -a || exit 0
           git push
