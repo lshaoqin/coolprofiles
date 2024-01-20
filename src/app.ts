@@ -1,6 +1,7 @@
 import { Octokit, App } from "octokit"
 import fs from 'fs';
 import callGPT from "./openai";
+import { generateDropdowns, generateMarkdown } from "./markdown";
 
 require('dotenv').config()
 
@@ -63,7 +64,8 @@ async function main() {
         const reply = await callGPT(entryString); // Await the callGPT function to resolve the promise
         replies[key.split(",")[0]] = reply ?? "No recent commits in this repository.";
     }
-    console.log(replies)
+    console.log(generateMarkdown(generateDropdowns(replies)));
+    fs.writeFileSync("README.md", generateMarkdown(generateDropdowns(replies)));
 }
   
 main();

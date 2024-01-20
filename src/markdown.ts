@@ -7,15 +7,15 @@ function generateDropdown(title: string, content: string) {
     `;
 }
 
-function generateDropdowns(entries: { [key: string]: string[] }) {
+export function generateDropdowns(entries: { [key: string]: string }) {
     let dropdowns = "";
     for (const [key, value] of Object.entries(entries)) {
-        dropdowns += generateDropdown(key, value.join("\n"));
+        dropdowns += generateDropdown(key, value);
     }
     return dropdowns;
 }
 
-function generateMarkdown(contributions: string) {
+export function generateMarkdown(contributions: string) {
     return `
     <div align="center">
         <h1>Contributions in the past 3 months</h1>
