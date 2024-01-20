@@ -2,7 +2,7 @@ import OpenAI from "openai"
 
 require('dotenv').config()
 
-const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
+const openai = new OpenAI();
 
 //const prompt = `You will be given a repository name and description. You will then be given a list of commits. Please summarise the commits in a few sentences.`
 const prompt = `Your responses should begin with the repository name
