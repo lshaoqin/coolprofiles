@@ -9,14 +9,14 @@ const octokit = new Octokit({auth: process.env.GH_TOKEN})
 
 async function getRepos() {
     const repos = await octokit.rest.repos.listForUser({
-        username: "lshaoqin"
+        username: process.env.GH_USER
     });
     return repos.data.map(repo => ({ name: repo.name, description: repo.description }));
 }
 
 async function getCommits(repo: string, start: string, end: string) {
     const commits = await octokit.rest.repos.listCommits({
-        owner: "lshaoqin",
+        owner: process.env.GH_USER,
         repo: repo,
         since: start, // start of the time range
         until: end // end of the time range
