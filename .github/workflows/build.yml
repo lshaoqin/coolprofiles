@@ -1,0 +1,28 @@
+name: Profile README
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "39 3 1 * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+      - name: Install Dependencies
+        run: npm install
+      - name: Rebuild README.md File
+        run: ts-node src/app.ts
+      - name: Commit and Push if Changed
+        run: |-
+          git add .
+          git diff
+          git commit -m "docs: auto-update README.md" -a || exit 0
+          git push

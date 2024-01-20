@@ -1,5 +1,6 @@
 import { Octokit, App } from "octokit"
 import fs from 'fs';
+import callGPT from "./openai";
 
 require('dotenv').config()
 
@@ -20,6 +21,13 @@ async function getCommits(repo: string, start: string, end: string) {
         until: end // end of the time range
         });
     return commits.data
+}
+
+function entryIntoString(key: string, value: string[]) {
+    return `Repository name: ${key.split(",", 2)[0]}
+Repository description: ${key.split(",", 2)[1]}
+    
+Commits:\n${value.join("\n")}\n`;
 }
 
 async function main() {
@@ -43,13 +51,19 @@ async function main() {
         }
     }
 
-    fs.writeFile('output.txt', JSON.stringify(entries), (err) => {
-        if (err) {
-            console.error('Error writing file:', err);
-        } else {
-            console.log('File written successfully');
-        }
-    });
+    const sortedEntries = Object.entries(entries)
+        .filter(([, value]) => value.length > 0)
+        .sort(([, a], [, b]) => b.length - a.length)
+        .slice(0, 5);
+
+    const replies: { [name: string]: string } = {}
+
+    for (const [key, value] of sortedEntries) {
+        const entryString = entryIntoString(key, value);
+        const reply = await callGPT(entryString); // Await the callGPT function to resolve the promise
+        replies[key.split(",")[0]] = reply ?? "No recent commits in this repository.";
+    }
+    console.log(replies)
 }
   
 main();
