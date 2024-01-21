@@ -2,58 +2,58 @@
 ## Contributions in the past 3 months
 
 <details>
-<summary>💻coolprofiles</summary>
+<summary>🌟coolprofiles</summary>
 Link to repo: https://github.com/lshaoqin/coolprofiles
 
-This repository focuses on providing a comprehensive guide and resources for using machine learning algorithms in natural language processing tasks. It covers various techniques, from text classification to sentiment analysis, making it a valuable resource for researchers and practitioners in the field.
+This repository contains a readme file that provides a summary of a GitHub repository. The summary is generated to give a professional overview of what the repository does in a concise paragraph of 20 to 50 words.
 
 ---
 
-In the coolprofiles repository, there were multiple commits related to updating and auto-updating the README.md file. There were also commits related to merging branches, testing build.yml files, fixing bugs, and making the username dynamic. Additionally, there were commits related to creating a word cloud and testing environment configurations.
+The coolprofiles repository has been updated with improvements to prompts, an updated README file, added sections to the README, and changes to the wordcloud functionality. There were also some fixes for bugs related to timestamps and a test of the new build configuration. The username was made dynamic, and there were multiple tests and updates to the environment configuration. Additionally, a new prompt was added.
 </details>
 
 <details>
-<summary>🌍MekongGPT</summary>
+<summary>🌐MekongGPT</summary>
 Link to repo: https://github.com/lshaoqin/MekongGPT
 
-This repository focuses on a Zalo chatbot that leverages the power of GPT-3.5 and Chroma to provide farmers with reliable and up-to-date information.
+This repository contains a Zalo chatbot that utilizes GPT-3.5 and Chroma to provide farmers with accurate and current agricultural information.
 
 ---
 
-Recent commits in the MekongGPT repository include reverting Dockerfile changes, updating dependencies, improving bot accuracy, adjusting prompt templates, integrating Firebase, fixing bugs, adding message storage, and updating access token handling. The repository also includes the addition of a verifier and logging for access tokens.
+The MekongGPT repository has several commits focusing on Dockerfile changes, improving the accuracy of the bot, adjusting prompts, integrating Firebase, fixing bugs, adjusting query response priorities, and adding a verifier and logging for access token. They also updated the arrow dependency and lockfiles.
 </details>
 
 <details>
-<summary>👍pe</summary>
+<summary>😐pe</summary>
 Link to repo: https://github.com/lshaoqin/pe
 
-This repository focuses on providing a comprehensive guide and resource for developers to create efficient and scalable web applications using the Python Flask framework. It includes step-by-step tutorials, code examples, and best practices for building robust web applications.
+This repository contains a detailed readme file that provides an overview of the project or software being developed. It includes information on how to install, use, and contribute to the project, along with any prerequisites or dependencies. The readme file serves as a comprehensive guide for users and developers to understand and work with the repository.
 
 ---
 
-There have been multiple commits on the "pe" repository, with all of them labeled as "upload file".
+This repository consists of multiple file uploads.
 </details>
 
 <details>
-<summary>📅aoc2023</summary>
+<summary>🌟aoc2023</summary>
 Link to repo: https://github.com/lshaoqin/aoc2023
 
-This repository focuses on the code written by the author for the Advent of Code 2023 event, showcasing their solutions to the coding challenges presented during the event.
+This repository contains the code for the Advent of Code 2023 event, showcasing my solutions to programming puzzles and challenges.
 
 ---
 
-The "aoc2023" repository contains code for the Advent of Code 2023 event. It includes commits for each day of the event, ranging from day 1 to day 23. Several updates and additions were made throughout the commits, including the removal of an extra print statement and an update to the day 12 code. There is also an update to the README.md file. The repository was initiated with an initial commit.
+This repository, named "aoc2023," contains code for the Advent of Code 2023 event. The repository consists of commits that add code for each day of the event, ranging from day 1 to day 23. One commit updates the code for day 12, while another commit removes an extra print statement. The repository also includes a commit that updates the README.md file and an initial commit.
 </details>
 
 <details>
-<summary>🚶‍♂️ped</summary>
+<summary>🚲ped</summary>
 Link to repo: https://github.com/lshaoqin/ped
 
-This repository focuses on providing a comprehensive overview of the project and its objectives. It includes detailed documentation on installation, usage, and configuration, along with helpful examples and code snippets. Additionally, it offers an extensive list of contributors and a roadmap for future development.
+This repository contains a README file that provides a comprehensive overview of a GitHub project. The summary mentions the main functionalities and features of the project in a concise and professional manner.
 
 ---
 
-This repository, ped, contains several commits that upload files.
+The repository "ped" has had multiple file uploads.
 </details>
 
 
