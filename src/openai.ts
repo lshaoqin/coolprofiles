@@ -42,5 +42,7 @@ export async function callGPTForEmoji(content: string) {
         model: "gpt-3.5-turbo"
     });
 
-    return completion.choices[0].message.content;
+    const answer = completion.choices[0].message.content;
+
+    return answer && answer.length == 1 ? completion.choices[0].message.content : "⭐";
 }
