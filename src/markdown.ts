@@ -1,17 +1,22 @@
-function generateDropdown(title: string, content: string) {
+export function generateDropdown(title: string, readmeSummary: string, commitsSummary: string, url: string) {
     return `
 <details>
 <summary>${title}</summary>
+Link to repo: ${url}
+<br/>
+${readmeSummary}
 
-${content}
+---
+
+${commitsSummary}
 </details>
 `;
 }
 
-export function generateDropdowns(entries: { [key: string]: string }) {
+export function generateDropdowns(entries: { [name: string]: string }) {
     let dropdowns = "";
     for (const [key, value] of Object.entries(entries)) {
-        dropdowns += generateDropdown(key, value);
+        dropdowns += value;
     }
     return dropdowns;
 }

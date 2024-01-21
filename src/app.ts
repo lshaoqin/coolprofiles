@@ -1,7 +1,7 @@
-import { Octokit, App } from "octokit"
+import { Octokit } from "octokit"
 import fs from 'fs';
-import callGPT from "./openai";
-import { generateDropdowns, generateMarkdown } from "./markdown";
+import { callGPTForCommits, callGPTForEmoji, callGPTForReadme } from "./openai";
+import { generateDropdown, generateDropdowns, generateMarkdown } from "./markdown";
 
 require('dotenv').config()
 
@@ -13,7 +13,7 @@ async function getRepos() {
     const repos = await octokit.rest.repos.listForUser({
         username: username
     });
-    return repos.data.map(repo => ({ name: repo.name, description: repo.description }));
+    return repos.data;
 }
 
 async function getCommits(repo: string, start: string, end: string) {
@@ -29,11 +29,12 @@ async function getCommits(repo: string, start: string, end: string) {
 }
 
 function entryIntoString(key: string, value: string[]) {
-    return `Repository name: ${key.split(",", 2)[0]}
-Repository description: ${key.split(",", 2)[1]}
+    return `Repository name: ${key.split(",|", 3)[0]}
+Repository description: ${key.split(",|", 3)[1]}
     
 Commits:\n${value.join("\n")}\n`;
 }
+
 
 async function main() {
     const repos = await getRepos();
@@ -41,15 +42,18 @@ async function main() {
 
     for (const repo of repos) {
         try {
-            const commits = await getCommits(repo.name, "2023-10-01", "2023-12-01");
+            const url = repo.html_url;
+            const currTime = new Date();
+            const prevTime = new Date(currTime.getTime() - 90 * 24 * 60 * 60 * 1000); // 90 days ago
+            const commits = await getCommits(repo.name, prevTime.toISOString(), currTime.toISOString());
             const messages = commits.map(commit => commit.commit.message);
             const msgList: string[] = [];
             for (const msg of messages) {
                 msgList.push(msg);
             }
             if (msgList.length > 0) {
-                const entryStr = `${repo.name}, ${repo.description}`;
-                entries[entryStr] = msgList;
+                const repoString = `${repo.name},|${repo.description ?? ""},|${url}`;
+                entries[repoString] = msgList;
             }
         } catch (error) {
             console.log(error);
@@ -65,10 +69,11 @@ async function main() {
 
     for (const [key, value] of sortedEntries) {
         const entryString = entryIntoString(key, value);
-        const reply = await callGPT(entryString); // Await the callGPT function to resolve the promise
-        replies[key.split(",")[0]] = reply ?? "No recent commits in this repository.";
+        const reply = await callGPTForCommits(entryString) ?? "No recent commits in this repository"; // Await the callGPT function to resolve the promise
+        const emoji = await callGPTForEmoji(key.split(",|", 3)[0]) ?? "";
+        const readmeSummary = await callGPTForReadme(key.split(",|", 3)[1]) ?? "No readme file in this repository.";
+        replies[key.split(",|")[0]] = generateDropdown(emoji + key.split(",|", 3)[0], readmeSummary, reply, key.split(",|", 3)[2]) ?? "No recent commits in this repository.";
     }
-    console.log(generateMarkdown(generateDropdowns(replies)));
     fs.writeFileSync("README.md", generateMarkdown(generateDropdowns(replies)));
 }
   
