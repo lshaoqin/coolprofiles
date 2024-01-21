@@ -3,11 +3,22 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import json
 import sys
+from dotenv import load_dotenv
+import os
+
+
+# Load environment variables from the .env file
+load_dotenv()
+
+# Now you can access the values using the `os.getenv` function
+gh_token = os.getenv("GH_TOKEN")
+openai_api_key = os.getenv("OPENAI_API_KEY")
+gh_user = os.getenv("GH_USER")
 
 def get_github_data(username, token):
     endpoint = 'https://api.github.com/graphql'
     headers = {
-        'Authorization': f'Bearer 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',
+        'Authorization': f'Bearer {token}',
     }
 
     # GraphQL query to retrieve data
@@ -78,19 +89,12 @@ def extract_text_from_json(json_string):
 
 def generate_word_cloud(data):
     all_text = extract_text_from_json(data)
-    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(all_text)
-    plt.figure(figsize=(10, 5))
-    plt.imshow(wordcloud, interpolation='bilinear')
-    plt.axis('off')
-    plt.show()
+    WordCloud(width=800, height=400, background_color='white').generate(all_text).to_file("out.jpg")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <github_username>")
-        sys.exit(1)
 
-    github_username = sys.argv[1]
-    github_token = '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'
+    github_username = gh_user
+    github_token = gh_token
 
     github_data = get_github_data(github_username, github_token)
     generate_word_cloud(github_data)
