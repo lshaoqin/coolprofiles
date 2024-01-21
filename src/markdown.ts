@@ -1,9 +1,7 @@
 export function generateDropdown(title: string, readmeSummary: string, commitsSummary: string, url: string) {
     return `
 <details>
-<summary>
-# ${title}
-</summary>
+<summary><strong>${title}</strong></summary>
 Link to repo: ${url}
 <br/>
 ${readmeSummary}
