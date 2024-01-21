@@ -2,77 +2,75 @@
 ## Contributions in the past 3 months
 
 <details>
-<summary>📁coolprofiles</summary>
+<summary>💻coolprofiles</summary>
 Link to repo: https://github.com/lshaoqin/coolprofiles
-This repository focuses on providing a comprehensive readme file summarizing the key features and instructions for using a particular project or application. It aims to provide a professional and concise overview for users to quickly understand and navigate through the project.
-  
+This repository focuses on providing a comprehensive documentation and guidelines for the project, offering a clear understanding of its purpose, installation steps, usage instructions, and contribution guidelines. It aims to facilitate smooth collaboration and development for the team involved.
 ---
-
-- Auto-updated README.md documentation.
-- Merged the 'main' branch from a remote repository.
-- Updated the wordcloud functionality to take inputs from .env and produce out.py in the same folder.
-- Tested a new build.yml configuration.
-- Fixed a bug related to TypeScript (ts).
+- Updated the README.md file.
+- Added additional sections to the README.md file.
+- Automatically updated the README.md file.
+- Merged the changes from the main branch.
+- Updated the wordcloud to take inputs from .env and produce out.py in the same folder.
+- Tested the new build.yml file.
+- Tested with the correct username.
+- Tested with username and email.
+- Fixed a bug related to TypeScript.
+- Merged the changes from the main branch.
+- Created a word cloud.
 - Changed the username to be dynamic.
-- Test environment configuration multiple times.
+- Tested the environment configuration.
 - Added a new prompt.
+- Merged the changes from the main branch.
+- Tested the environment configuration.
 - Added an extra line break to the generateDropdown function.
-- Test GitHub Actions.
 </details>
 
 <details>
-<summary>🤖MekongGPT</summary>
+<summary>🌐MekongGPT</summary>
 Link to repo: https://github.com/lshaoqin/MekongGPT
-This repository focuses on a Zalo chatbot that utilizes GPT-3.5 and Chroma to deliver accurate and current information to farmers.
-  
+This repository focuses on a Zalo chatbot that utilizes GPT-3.5 and Chroma technology to deliver farmers with accurate and current agricultural information.
 ---
-  
-- Reverted changes made to the Dockerfile.
-- Removed Azure testing.
+- Reverted previous changes made to the Dockerfile.
+- Tested removing Azure from the project.
 - Made changes to the Dockerfile for deployment on Render.
-- Reverted a previous commit that changed the version of Arrow.
-- Updated the Arrow dependency.
-- Improved the accuracy of the chatbot.
-- Forced the chatbot to reply in Vietnamese.
-- Adjusted the prompt templates and query scoring threshold.
-- Added storage of queries and answers.
+- Updated the Arrow dependency in the project.
+- Made improvements to the accuracy of the chatbot.
+- Forced the bot to reply in Vietnamese.
+- Made prompt adjustments and updated query scoring threshold.
+- Added storage for queries and answers.
 - Added intermediate and error messages.
 - Updated the project to use Pinecone.
-- Added debugging for the /querygpt route.
-- Integrated Firebase.
+- Added debugging for the /querygpt endpoint.
+- Integrated Firebase into the project.
 - Fixed an await bug.
-- Fixed server freezing and improved exception handling.
+- Fixed an issue with the server freezing and enhanced exception handling.
 - Adjusted the priority for the /zaloquery response.
-- Changed authorization.
-- Tried a different approach.
-- Tested on Render for index.html.
-- Changed the verifier route.
+- Updated authorization settings.
+- Made changes to the verifier route.
 - Added a verifier.
 - Added logging for access token.
-- Updated the lockfile multiple times.
-- Updated the access token access.
+- Updated the lockfile.
+- Updated access token access.
 </details>
 
 <details>
-<summary>💻pe</summary>
+<summary>Sorry, I don't understand what you mean by "pe". Can you please provide more context or clarify your request?pe</summary>
 Link to repo: https://github.com/lshaoqin/pe
-This repository focuses on providing a concise summary of the contents of a typical readme.md file found in GitHub repositories. The goal is to generate a professional and informative summary of the repository's purpose and contents in 20 to 50 words.
+This repository focuses on providing a complete readme file in markdown format for a Github repository. It aims to assist users in understanding the project and its functionalities efficiently.
 ---
-There were 30 "upload file" commits in the pe repository.
+There were 30 consecutive commits made to the "pe" repository, each labeled as "upload file".
 </details>
 
 <details>
-<summary>🌟aoc2023</summary>
+<summary>📅aoc2023</summary>
 Link to repo: https://github.com/lshaoqin/aoc2023
-This repository focuses on providing my code for the Advent of Code 2023 event, showcasing my solutions to the daily coding challenges.
-  
+This repository focuses on the code implementation for the Advent of Code 2023 event. It contains solutions and code for various coding puzzles and challenges offered during the event.
 ---
-
 - Added code for day 23.
 - Added code for day 22.
 - Added code for day 21.
 - Added code for day 20.
-- Removed an extra print statement.
+- Removed extra print statement.
 - Added code for day 19.
 - Added code for day 18.
 - Added code for day 17.
@@ -100,13 +98,11 @@ This repository focuses on providing my code for the Advent of Code 2023 event, 
 </details>
 
 <details>
-<summary>🚲ped</summary>
+<summary>🚶‍♂️ped</summary>
 Link to repo: https://github.com/lshaoqin/ped
-This repository focuses on providing a comprehensive readme file for a GitHub repository. It aims to present a professional summary of the repository's content in a concise and informative manner.
-  
+This repository focuses on providing a comprehensive description and guidance for users regarding the setup, installation, and usage of the project. It also includes information about dependencies, contributions, and license details, making it user-friendly and accessible for all.
 ---
-
-There are nine consecutive commits in the "ped" repository, all labeled as "upload file".
+There are 9 commits in the "ped" repository, all of which involve uploading files.
 </details>
 
 
