@@ -2,4 +2,3 @@ node_modules
 .env
 output.txt
 src/test.ts
-out.jpg
