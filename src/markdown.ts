@@ -26,7 +26,7 @@ export function generateMarkdown(contributions: string) {
 ## 🔨 I've been working on:
 ${contributions}
 
-![Image Alt Text](../wordcloud/out.jpg)
+![Image Alt Text](../out.jpg)
 
 <br>
 
