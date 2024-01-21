@@ -8,15 +8,19 @@ require('dotenv').config()
 const octokit = new Octokit({auth: process.env.GH_TOKEN})
 
 async function getRepos() {
+    if (!process.env.GH_USER) throw new Error("GH_USER not set");
+    const username = process.env.GH_USER
     const repos = await octokit.rest.repos.listForUser({
-        username: "lshaoqin"
+        username: username
     });
     return repos.data.map(repo => ({ name: repo.name, description: repo.description }));
 }
 
 async function getCommits(repo: string, start: string, end: string) {
+    if (!process.env.GH_USER) throw new Error("GH_USER not set");
+    const username = process.env.GH_USER
     const commits = await octokit.rest.repos.listCommits({
-        owner: "lshaoqin",
+        owner: username,
         repo: repo,
         since: start, // start of the time range
         until: end // end of the time range
