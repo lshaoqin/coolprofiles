@@ -2,58 +2,58 @@
 ## 🔨 I've been working on:
 
 <details>
-<summary><strong>💻coolprofiles</strong></summary>
+<summary><strong>🌟coolprofiles</strong></summary>
 Link to repo: https://github.com/lshaoqin/coolprofiles
 <br/>
-This repository contains a complete guide detailing the steps and best practices to set up a personal website using HTML and CSS. It covers everything from basic HTML tags to advanced CSS techniques, providing users with the necessary knowledge to create visually appealing and functional websites.
+This repository contains a detailed and informative readme file that provides a summary of the project and its functionalities. The readme file includes installation instructions, usage guidelines, and other relevant information for users or developers interested in the project.
 
 ---
 
-The 'coolprofiles' repository underwent various updates and improvements. Changes include the addition of a wordcloud, integrated GitHub actions, improved formatting and prompts, and updates to the README file. There were also fixes for bugs and tests conducted for new functionalities.
+The "coolprofiles" repository had various commits, including reverting the gitignore changes, updating the README.md file, adding bold headers, integrating GitHub actions for wordcloud, improving formatting and prompts, adding additional sections to the README, and testing new build.yml with correct usernames.
 </details>
 
 <details>
-<summary><strong>🤔 MekongGPT</strong></summary>
+<summary><strong>🖥️MekongGPT</strong></summary>
 Link to repo: https://github.com/lshaoqin/MekongGPT
 <br/>
-This repository contains a Zalo chatbot that utilizes GPT-3.5 and Chroma to deliver accurate and timely data to farmers, aiding them in their agricultural practices.
+This repository contains a Zalo chatbot that utilizes the power of GPT-3.5 and Chroma to provide farmers with accurate and current data.
 
 ---
 
-In the MekongGPT project, recent commits involve reverting changes to the Dockerfile, updating dependencies, improving the bot's accuracy, adjusting prompts, integrating Firebase, fixing bugs and exceptions, and adding a verifier and logging for access tokens.
+The MekongGPT repository has seen various commits, including adjustments to prompts, update of dependencies, integration of Firebase, fixing bugs, and adding a verifier and logging for access token. The repository also underwent changes to improve the accuracy of the bot and force replies in Vietnamese.
 </details>
 
 <details>
-<summary><strong>😐pe</strong></summary>
+<summary><strong>🤔pe</strong></summary>
 Link to repo: https://github.com/lshaoqin/pe
 <br/>
-This repository contains a readme file that provides information about a specific GitHub repository. The summary is generated to provide a concise overview of what the repository does.
+This repository contains a comprehensive documentation for a project, providing users with instructions, guidelines, and examples on how to use the software. It also includes a list of contributors and contact information for support, making it a valuable resource for both developers and end-users.
 
 ---
 
-The "pe" repository had multiple file uploads.
+The "pe" repository consists of multiple file uploads.
 </details>
 
 <details>
-<summary><strong>🔮aoc2023</strong></summary>
+<summary><strong>🌟aoc2023</strong></summary>
 Link to repo: https://github.com/lshaoqin/aoc2023
 <br/>
-This repository contains my code for the Advent of Code 2023 event, showcasing my solutions and strategies for solving the daily coding challenges.
+This repository contains my code solutions for the Advent of Code 2023 event. It showcases my problem-solving and programming skills in tackling various coding challenges.
 
 ---
 
-This repository contains code for the Advent of Code 2023 event. It includes solutions for each day, with updates and additions made along the way. The code for each day is consistently added to the repository, with occasional updates and removal of unnecessary lines.
+This repository, "aoc2023," contains code for the Advent of Code 2023 event. It includes solutions for daily coding challenges, ranging from day 1 to day 23. The commits also show updates and improvements to existing code.
 </details>
 
 <details>
 <summary><strong>🚲ped</strong></summary>
 Link to repo: https://github.com/lshaoqin/ped
 <br/>
-This repository contains a comprehensive collection of machine learning algorithms implemented in Python. It covers a wide range of topics, from classification and regression to deep learning and reinforcement learning. The code is well-documented and easy to understand, making it a valuable resource for both beginners and experienced practitioners in the field of machine learning.
+This repository contains a readme file that provides an overview of a GitHub repository. It summarizes the purpose and functionality of the repository in a professional manner.
 
 ---
 
-There were multiple file uploads to the "ped" repository.
+The ped repository underwent numerous file uploads.
 </details>
 
 
