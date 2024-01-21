@@ -1,58 +1,62 @@
-# coolprofiles
 
-## What we do
-Coolprofiles creates a *cool* README for your GitHub profile, so you can easily showcase to everyone what you've been up to recently. Our mission is simple: inject some fun into the often mundane world of managing GitHub profiles. Why settle for a standard profile when you can have one that reflects more than just your code contributions? 
+## 🔨 I've been working on:
 
-### How Does it Work?
-1. GitHub Repository Transformation: CoolProfiles dives into your GitHub repository and forks it to create a unique and whimsical summary of your most recent commits from the past three months.
+<details>
+<summary><strong>🚀coolprofiles</strong></summary>
+Link to repo: https://github.com/lshaoqin/coolprofiles
+<br/>
+This repository contains a detailed description of the project and its functionalities. It offers a comprehensive guide on how to install and use the software, as well as examples and best practices for effective implementation. Additionally, it provides information on the project's contributors, license, and any external dependencies required for success.
 
-2. README.md Magic: But we don't stop there! We magically transform your repository's README.md file into an engaging summary that captures the essence of your project. Most importantly, this personal README will be automatically updated every month. 
+---
 
-3. Emoji Auto-Generation: The cherry on top is our emoji feature! Our system smartly auto-generates an emoji that perfectly matches the title of your GitHub repo. Imagine a repository named "SolarSystem" getting paired with a planet emoji, or "MusicBox" finding its rhythm with a musical note emoji. It's the perfect blend of functionality and frivolity.
+This repository, named "coolprofiles," has seen several commits focused on updating the README file, adding bold headers, integrating GitHub actions for a word cloud, improving formatting and prompts, and adding additional sections to the README. There is also a commit related to testing a new build configuration file.
+</details>
 
-4. Word Cloud Wonderland: And for the grand finale, we create a word cloud, a visual feast crafted from your repository titles, descriptions, commits, and pull requests.
+<details>
+<summary><strong>🌐MekongGPT</strong></summary>
+Link to repo: https://github.com/lshaoqin/MekongGPT
+<br/>
+This repository contains a Zalo chatbot that utilizes GPT-3.5 and Chroma to provide farmers with reliable and up-to-date data, offering a valuable tool for agricultural information and assistance.
 
-### Why CoolProfiles?
-This project isn't just about enhancing profiles; it's about bringing a smile, a chuckle, and maybe even a bewildered shake of the head. In a world obsessed with utility, we're here to celebrate the joy of the beautifully useless. Join us in this playful rebellion against the mundane – your GitHub profile will never be the same!
+---
+
+In the MekongGPT repository, recent commits include reverting changes to the Dockerfile, updating dependencies, improving accuracy of the chatbot, adjusting prompts, integrating Firebase, fixing bugs, adding error messages, and updating access token access.
+</details>
+
+<details>
+<summary><strong>👍pe</strong></summary>
+Link to repo: https://github.com/lshaoqin/pe
+<br/>
+This repository contains a comprehensive readme file that provides an overview of the project or codebase. It helps the users understand the purpose, functionality, and usage of the repository. The readme file also includes installation instructions, code examples, and any other relevant information to ensure a smooth integration and usage of the repository.
+
+---
+
+The repository "pe" has had multiple file uploads.
+</details>
+
+<details>
+<summary><strong>🌍aoc2023</strong></summary>
+Link to repo: https://github.com/lshaoqin/aoc2023
+<br/>
+This repository contains my code for the Advent of Code 2023 event, showcasing my solutions and programming skills for the challenging coding puzzles presented during the event.
+
+---
+
+This repository contains my code for the Advent of Code 2023 event. It includes solutions for days 1 to 23, with updates and improvements made along the way. The README.md file has also been updated.
+</details>
+
+<details>
+<summary><strong>🚲ped</strong></summary>
+Link to repo: https://github.com/lshaoqin/ped
+<br/>
+This repository contains a comprehensive readme file that provides an in-depth overview of the project, including its purpose, goals, and key features. It also includes detailed instructions for installation, usage, and contributing to the project, making it a valuable resource for newcomers and developers alike.
+
+---
+
+The repository "ped" received multiple file uploads.
+</details>
 
 
+![Image Alt Text](../wordcloud/out.jpg)
 
-
-## Setting up
-1. Fork this repo and give it the same name as your GitHub username.
-* NOTE: If the repository does not share your username, the README will not display on your profile.
-
-3. To allow GitHub Actions to write to your repository: Go to *Settings* -> *Actions* -> *General* -> *Workflow Permissions* -> Select *Read and write permissions*.
-
-4. To add your environment variables: Go to *Settings* -> *Secrets and Variables* -> Under *Repository Secrets*, Click/Add a *New Repository Secret*
-
-* Name your *New Secret* "ENV_FILE"
-
-* Fill in the *Secrets* section with the following template and replace the respective fields with your [GitHub personal access token](https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), [OpenAI key](https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt), and GitHub username. 
-```
-GH_TOKEN=(Change this to your GitHub personal access token)
-OPENAI_API_KEY=(Change this to your OpenAI key)
-GH_USER=(Change this to your GitHub username)
-```
-Example:
-```
-GH_TOKEN=WJd3rnf8snvSDdNs93rnv5ny9cdJHKndgNjgdk
-OPENAI_API_KEY=sk-S7nVFDJIYdnhNFjmndDShmsjfuBF933nDUFhjkda
-GH_USER=username
-```
-<img width="560" alt="image" src="https://github.com/lshaoqin/coolprofiles/assets/103313573/bc4543c1-88fa-4400-ac85-18b50b4b2cb9">
-
-4. Go to *Actions* -> Click *I understand my workflows, go ahead and enable them*
-<img width="560" alt="image" src="https://github.com/lshaoqin/coolprofiles/assets/103313573/6eba231f-ef94-4efb-a96f-38d1d376c938">
-
-5. Go to *Profile README* -> click *Enable Workflow*
-<img width="560" alt="image" src="https://github.com/lshaoqin/coolprofiles/assets/103313573/df414e1b-cd6a-4887-9c0c-a4ba5b50e306">
-
-6. Once enabled, click *Run workflow*
-<img width="560" alt="image" src="https://github.com/lshaoqin/coolprofiles/assets/103313573/a8cbd18d-95c9-414f-a0a1-301fcca8fe58">
-
-7. (Optional) Setup the credentials you will be pushing the commit with. Go to `build.yml` and change the lines
-```
-git config --global user.email "(Change this to your email)"
-git config --global user.name "(Change this to your username)"
-```
+This README was automatically generated using [coolprofiles](https://github.com/lshaoqin/coolprofiles)! Because of this, some of the information here may not be accurate - check out the repositories for yourself to find out more!
