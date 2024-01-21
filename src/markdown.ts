@@ -28,6 +28,10 @@ ${contributions}
 
 ![Image Alt Text](../wordcloud/out.jpg)
 
-This README was automatically generated using [coolprofiles](https://github.com/lshaoqin/coolprofiles)! Because of this, some of the information here may not be accurate - check out the repositories for yourself to find out more!
+<br>
+
+<p align="center">
+📢 <strong>This README was automatically generated using <a href="https://github.com/lshaoqin/coolprofiles">coolprofiles</a>!</strong>
+</p>
 `;
 }
