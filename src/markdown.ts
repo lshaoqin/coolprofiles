@@ -26,7 +26,7 @@ export function generateMarkdown(contributions: string) {
 ## 🔨 I've been working on:
 ${contributions}
 
-![Image Alt Text](../out.jpg)
+![Image Alt Text](https://github.com/${process.env.GH_USER}/${process.env.GH_USER}/blob/main/out.jpg)
 
 <br>
 
