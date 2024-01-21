@@ -3,7 +3,7 @@ export function generateDropdown(title: string, readmeSummary: string, commitsSu
 <details>
 <summary>${title}</summary>
 Link to repo: ${url}
-
+<br/>
 ${readmeSummary}
 
 ---
