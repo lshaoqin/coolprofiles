@@ -25,8 +25,13 @@ export function generateMarkdown(contributions: string) {
     return `
 ## 🔨 I've been working on:
 ${contributions}
+<br>
 
-![Image Alt Text](https://github.com/${process.env.GH_USER}/${process.env.GH_USER}/blob/main/out.jpg)
+<p align="center">
+  <img src="https://github.com/${process.env.GH_USER}/${process.env.GH_USER}/blob/main/out.jpg" alt="My Word Cloud" />
+  <br />
+  <em><strong>My Github Profile in a nustshell</strong></em>
+</p>
 
 <br>
 
