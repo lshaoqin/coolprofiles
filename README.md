@@ -35,7 +35,7 @@ There have been multiple commits on the "pe" repository, with all of them labele
 </details>
 
 <details>
-<summary>🌟aoc2023</summary>
+<summary>📅aoc2023</summary>
 Link to repo: https://github.com/lshaoqin/aoc2023
 
 This repository focuses on the code written by the author for the Advent of Code 2023 event, showcasing their solutions to the coding challenges presented during the event.
@@ -46,7 +46,7 @@ The "aoc2023" repository contains code for the Advent of Code 2023 event. It inc
 </details>
 
 <details>
-<summary>🚲ped</summary>
+<summary>🚶‍♂️ped</summary>
 Link to repo: https://github.com/lshaoqin/ped
 
 This repository focuses on providing a comprehensive overview of the project and its objectives. It includes detailed documentation on installation, usage, and configuration, along with helpful examples and code snippets. Additionally, it offers an extensive list of contributors and a roadmap for future development.
