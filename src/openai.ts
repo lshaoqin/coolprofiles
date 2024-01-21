@@ -44,5 +44,5 @@ export async function callGPTForEmoji(content: string) {
 
     const answer = completion.choices[0].message.content;
 
-    return answer && answer.length == 1 ? completion.choices[0].message.content : "⭐";
+    return answer && answer.length <= 2 ? completion.choices[0].message.content : "⭐";
 }
