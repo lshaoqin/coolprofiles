@@ -5,7 +5,9 @@
 <summary>📁coolprofiles</summary>
 Link to repo: https://github.com/lshaoqin/coolprofiles
 This repository focuses on providing a comprehensive readme file summarizing the key features and instructions for using a particular project or application. It aims to provide a professional and concise overview for users to quickly understand and navigate through the project.
+  
 ---
+
 - Auto-updated README.md documentation.
 - Merged the 'main' branch from a remote repository.
 - Updated the wordcloud functionality to take inputs from .env and produce out.py in the same folder.
@@ -22,7 +24,9 @@ This repository focuses on providing a comprehensive readme file summarizing the
 <summary>🤖MekongGPT</summary>
 Link to repo: https://github.com/lshaoqin/MekongGPT
 This repository focuses on a Zalo chatbot that utilizes GPT-3.5 and Chroma to deliver accurate and current information to farmers.
+  
 ---
+  
 - Reverted changes made to the Dockerfile.
 - Removed Azure testing.
 - Made changes to the Dockerfile for deployment on Render.
@@ -61,7 +65,9 @@ There were 30 "upload file" commits in the pe repository.
 <summary>🌟aoc2023</summary>
 Link to repo: https://github.com/lshaoqin/aoc2023
 This repository focuses on providing my code for the Advent of Code 2023 event, showcasing my solutions to the daily coding challenges.
+  
 ---
+
 - Added code for day 23.
 - Added code for day 22.
 - Added code for day 21.
@@ -97,7 +103,9 @@ This repository focuses on providing my code for the Advent of Code 2023 event, 
 <summary>🚲ped</summary>
 Link to repo: https://github.com/lshaoqin/ped
 This repository focuses on providing a comprehensive readme file for a GitHub repository. It aims to present a professional summary of the repository's content in a concise and informative manner.
+  
 ---
+
 There are nine consecutive commits in the "ped" repository, all labeled as "upload file".
 </details>
 
