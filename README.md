@@ -22,9 +22,9 @@ This project isn't just about enhancing profiles; it's about bringing a smile, a
 1. Fork this repo and give it the same name as your GitHub username.
 * NOTE: If the repository does not share your username, the README will not display on your profile.
 
-3. To allow GitHub Actions to write to your repository: Go to *Settings* -> *Actions* -> *General* -> *Workflow Permissions* -> Select *Read and write permissions*.
+2. To allow GitHub Actions to write to your repository: Go to *Settings* -> *Actions* -> *General* -> *Workflow Permissions* -> Select *Read and write permissions*.
 
-4. To add your environment variables: Go to *Settings* -> *Secrets and Variables* -> Under *Repository Secrets*, Click/Add a *New Repository Secret*
+3. To add your environment variables: Go to *Settings* -> *Secrets and Variables* -> Under *Repository Secrets*, Click/Add a *New Repository Secret*
 
 * Name your *New Secret* "ENV_FILE"
 
